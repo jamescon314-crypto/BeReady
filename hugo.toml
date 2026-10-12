@@ -1,0 +1,20 @@
+Ini, TOML
+baseURL = 'https://github.com/jamescon314-crypto/BeReady.git'
+languageCode = 'en-us'
+title = 'James Conley, Th.E., D.O.J., N.O.B.'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'light'
+  showReadingTime = true
+
+[params.homeInfoParams]
+  Title = "James Conley"
+  Content = "Th.E."
+
+[menu]
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles & Guides"
+    url = "/posts/"
+    weight = 10
