@@ -1,20 +1,38 @@
-Ini, TOML
-baseURL = 'https://github.com/jamescon314-crypto/BeReady.git'
+
+# Configuration for James Conley's Personal Site
+baseURL = 'https://jamescon314-crypto.github.io/BeReady/'
 languageCode = 'en-us'
-title = 'James Conley, Th.E., D.O.J., N.O.B.'
-theme = 'PaperMod'
+title = 'Be Ready!'
+theme = 'ananke'
 
 [params]
-  defaultTheme = 'light'
-  showReadingTime = true
+# Background color of the main header banner (e.g., bg-navy, bg-black, bg-dark-blue)
+  background_color_class = "bg-navy"
+  
+  # Short summary displayed under the main title in the header banner
+  description = "Are you ready?"
+  
+  # Number of recent posts to show on the homepage
+  recent_posts_number = 3
 
-[params.homeInfoParams]
-  Title = "James Conley"
-  Content = "Th.E."
+# Main Navigation Links
+[[menus.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
 
-[menu]
-  [[menu.main]]
-    identifier = "articles"
-    name = "Articles & Guides"
-    url = "/posts/"
-    weight = 10
+[[menus.main]]
+  name = 'Articles'
+  url = '/posts/'
+  weight = 20
+[[menus.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 30
+ 
+
+
+# Ananke's social links configuration
+[[params.ananke_socials]]
+  name = "github"
+  url = "https://github.com/jamescon314-crypto"

@@ -1,0 +1,28 @@
+Pandoc
+
+Add Hugo Metadata at the Very Top:
+
+Type your Hugo "Front Matter" on the first few lines of the document before your main text:
+
+Plaintext
+---
+title: "Troubleshooting High-Pressure Hydraulics"
+date: 2026-10-10
+description: "Field guide for diagnosing relief valve pressure drops."
+tags: ["Hydraulics", "Maintenance"]
+---
+Save Normally: Save your document as a standard .odt file inside a working folder (e.g., ~/Documents/drafts/hydraulics.odt).
+
+
+To convert your document into a Hugo-compatible .md file, run pandoc in your terminal:
+
+Bash
+# General syntax:
+pandoc -f odt -t markdown_strict+yaml_metadata_block input.odt -o output.md --extract-media=.
+
+# Run this inside your Hugo site's content/ folder:
+pandoc -f odt -t markdown_strict+yaml_metadata_block ~/Documents/drafts/hydraulics.odt \
+  -o hydraulics.md \
+  --extract-media=../static/images/
+
+What this does: Pandoc extracts every image embedded in your LibreOffice file, dumps them directly into Hugo's /static/images/ folder, and automatically links them inside the generated Markdown file.

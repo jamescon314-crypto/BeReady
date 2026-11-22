@@ -1,0 +1,14 @@
+/* Target body header.cover to override Tachyons framework defaults */
+body header.cover {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  height: auto !important;
+  min-height: 45vw !important; /* Adjust this percentage to match your image's height/width ratio */
+}
+
+/* Position header title and text over padding box */
+body header.cover .tc-l {
+  padding-top: 4rem; 
+ 
+}

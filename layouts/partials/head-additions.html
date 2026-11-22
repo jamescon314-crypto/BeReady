@@ -1,0 +1,96 @@
+<style>
+  /* Override Ananke's Tachyons width limits (measure-wide = ~544px) */
+  main article,
+  .measure-wide,
+  .measure {
+    max-width: 950px !important; /* Widens the main content area */
+    width: 100% !important;
+  }
+
+  /* Style all blockquotes on the site (homepage + posts) */
+  blockquote {
+    background-color: #f0f4f8 !important;
+    border-left: none !important;
+    margin: 2rem 0 !important;
+    padding: 1.5rem 2rem !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    text-align: center !important;
+  }
+
+  /* Verse scripture text - increased font size */
+  blockquote p {
+    font-family: Georgia, serif !important;
+    font-size: 1.35rem !important;
+    line-height: 1.75 !important;
+    color: #111111 !important;
+    margin: 0 !important;
+  }
+
+  /* Scripture reference header - increased font size */
+  blockquote strong {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    display: block !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #0b1d3a !important;
+    margin-bottom: 0.6rem !important;
+    letter-spacing: 0.5px !important;
+  }
+
+/* ==========================================================================
+     2. ARTICLE / POST PAGE BLOCKQUOTES (Left-Justified, With Blue Left Bar)
+     ========================================================================== */
+  .nested-copy-line-height blockquote {
+    background-color: #f0f4f8 !important;
+    border-left: 6px solid #0b1d3a !important; /* Restores the blue vertical bar */
+    margin: 1.5rem 0 !important;
+    padding: 1.25rem 1.5rem !important;
+    border-radius: 0 8px 8px 0 !important; /* Flat left side, rounded right side */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    text-align: left !important; /* Left-justifies text */
+  }
+
+  .nested-copy-line-height blockquote p {
+    font-size: 1.2rem !important; /* Slightly smaller for long-form article reading */
+    text-align: left !important;
+  }
+
+  .nested-copy-line-height blockquote strong {
+    font-size: 1.15rem !important;
+    text-align: left !important;
+  }
+
+/* ==========================================================================
+     TABLE OF CONTENTS SPACING OVERRIDES
+     ========================================================================== */
+  /* Remove extra margins on TOC nested lists */
+  #TableOfContents ul,
+  .toc-container ul {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+    padding-left: 1.25rem !important; /* Indentation depth for subheadings */
+    list-style-type: disc;
+  }
+
+  /* Reduce space between each heading line */
+  #TableOfContents li,
+  .toc-container li {
+    margin-bottom: 0.2rem !important; /* Vertical gap between items (default is often 0.5rem+) */
+    line-height: 1.1 !important;    /* Tightens spacing for multi-line titles */
+  }
+
+  /* Adjust link padding */
+  #TableOfContents a,
+  .toc-container a {
+    padding: 0 !important;
+    text-decoration: none;
+    color: #0b1d3a;
+  }
+
+  #TableOfContents a:hover,
+  .toc-container a:hover {
+    text-decoration: underline;
+  }
+
+</style>
