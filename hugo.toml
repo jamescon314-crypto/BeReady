@@ -1,6 +1,6 @@
 
 # Configuration for James Conley's Personal Site
-baseURL = 'https://jamescon314-crypto.github.io/BeReady/'
+baseURL = 'https://ruready.life'
 languageCode = 'en-us'
 title = 'Be Ready!'
 theme = 'ananke'
